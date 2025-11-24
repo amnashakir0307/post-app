@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("blue-designed-grunge-concrete-texture-vintage-background-with-space-text-image.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            color: white;
+        }
+
+        .heder h1 {
+            font-size: 45px;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+
+        .heder button {
+            margin-top: 25px;
+            padding: 12px 35px;
+            border-radius: 6px;
+            border: none;
+            background-color: white;
+            color: rgb(3, 3, 78);
+            font-weight: 900;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .heder button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .heder a {
+            color: rgb(3,3,78);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main img {
+            width: 370px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* -------------------- Responsive -------------------- */
+        @media (max-width: 900px) {
+            .main {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .heder h1 {
+                font-size: 35px;
+            }
+
+            .main img {
+                width: 260px;
+            }
+
+            .heder button {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .heder h1 {
+                font-size: 28px;
+            }
+
+            .main img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="heder">
+            <h1>welcome to post app</h1>
+            <button><a href="index2.html">Start Now</a></button>
+        </div>
+
+        <div>
+            <img src="compressed_816e959c46e732492027b069c2ae9ab3.webp" alt="welcome image" width="1200px">
+        </div>
+    </div>
+
+</body>
+</html>
